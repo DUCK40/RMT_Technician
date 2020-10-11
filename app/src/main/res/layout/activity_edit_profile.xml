@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfile">
+
+    <LinearLayout
+        android:id="@+id/Lname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+
+        <TextView
+
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="ชื่อ" />
+
+        <EditText
+            android:id="@+id/edtname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/Llastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Lname"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp">
+
+
+        <TextView
+
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="*"
+            android:textColor="#000000"
+
+            android:text="นามสกุล" />
+
+        <EditText
+            android:id="@+id/edtlastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Lusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Llastname"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp">
+
+
+        <TextView
+
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="*"
+            android:textColor="#000000"
+
+            android:text="เบอร์โทร" />
+
+        <EditText
+            android:id="@+id/edtphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:maxLength="10"
+
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/LpasswordBefore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Lusername"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp">
+
+
+        <TextView
+
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="*"
+            android:textColor="#000000"
+
+            android:text="รหัสเก่า" />
+
+        <EditText
+            android:id="@+id/edtpasswordBefore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:inputType="textPassword"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/LpasswordAfter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LpasswordBefore"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp">
+
+
+        <TextView
+
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="*"
+            android:textColor="#000000"
+
+            android:text="รหัสใหม่" />
+
+        <EditText
+            android:id="@+id/edtpasswordAfter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:inputType="textPassword"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LpasswordAfterAgin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LpasswordAfter"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp">
+
+
+        <TextView
+
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="*"
+            android:textColor="#000000"
+
+            android:text="รหัสใหม่" />
+
+        <EditText
+            android:id="@+id/edtpasswordAfterAgin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:inputType="textPassword"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/Lbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LpasswordAfterAgin"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp">
+
+
+        <Button
+            android:id="@+id/btnok"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_weight="2.5"
+
+            android:text="OK" />
+
+        <Button
+            android:id="@+id/btncancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:textColor="#000000"
+            android:text="cancel"/>
+    </LinearLayout>
+
+</RelativeLayout>

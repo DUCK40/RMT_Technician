@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:maxLength="30"
+                android:text="ชื่อ :"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+
+                />
+
+            <TextView
+                android:id="@+id/textName"
+
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:maxLength="30"
+                android:text="---------"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:maxLength="30"
+                android:text="เบอร์ :"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+
+                />
+
+            <TextView
+                android:id="@+id/texttel"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="-------------"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:maxLength="30"
+                android:text="จุดสังเกต :"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+
+                />
+
+            <TextView
+                android:id="@+id/textLandMark"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="-------------"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

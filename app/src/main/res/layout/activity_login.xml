@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/header"
+
+
+        android:layout_width="wrap_content"
+        android:background="@drawable/logot"
+
+        android:layout_height="75dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/Llogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/header"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:src="@drawable/login" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/Lusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Llogin"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Username" />
+
+        <EditText
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:hint="Username" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/Lpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Lusername"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="*"
+            android:layout_weight="1"
+            android:text="Password" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:inputType="textPassword"
+            android:hint="Password" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Lbuttonok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Lpassword"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp">
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="OK" />
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
